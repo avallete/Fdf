@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 15:01:14 by avallete          #+#    #+#             */
-/*   Updated: 2015/01/05 22:04:45 by avallete         ###   ########.fr       */
+/*   Updated: 2015/01/10 19:28:44 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	key_persp(t_mle *env, int persp)
 {
-	mlx_clear_window(env->mlx, env->win);
 	if (env->beginlist)
 		mod_value(env->beginlist, persp, env->basis->iso);
 	if (env->beginlist)
@@ -23,7 +22,6 @@ void	key_persp(t_mle *env, int persp)
 
 void	key_iso(t_mle *env)
 {
-	mlx_clear_window(env->mlx, env->win);
 	if (env->beginlist && env->basis->iso == 0)
 	{
 		convert_iso(env->beginlist, env->basis->size);
@@ -38,7 +36,6 @@ void	key_iso(t_mle *env)
 
 void	key_cava(t_mle *env)
 {
-	mlx_clear_window(env->mlx, env->win);
 	if (env->beginlist && env->basis->iso == 0)
 	{
 		convert_cava(env->beginlist, env->basis->size);
