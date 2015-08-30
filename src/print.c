@@ -59,8 +59,6 @@ void	init_imgdonn(int *px, int *line, int *c, t_mle *env)
 	*px = (4 * sizeof(char));
 	*line = WINDOW_W;
 	*c = 1;
-	if (env->img)
-		mlx_destroy_image(env->mlx, env->img);
 }
 
 void	print_map(t_mle *env, t_listc *map)

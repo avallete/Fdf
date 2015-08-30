@@ -105,14 +105,4 @@ void	kill_them_all(t_mle *env)
 		free_list(env->beginlist);
 	if (env->basis)
 		free(env->basis);
-	env->basis = NULL;
-	if (env->win)
-		free(env->win);
-	env->win = NULL;
-	if (env->img)
-		mlx_destroy_image(env->mlx, env->img);
-	env->img = NULL;
-	if (env->mlx)
-		free(env->mlx);
-	env->mlx = NULL;
 }

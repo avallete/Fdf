@@ -36,8 +36,8 @@
 # define INIT_DIFF ((diff[0] = 0), (diff[1] = 0))
 # define INIT_VAR_CENTER ((e = 0), INIT_DIFF, (pos[0] = 0), (pos[1] = 0))
 # define RGB_ASSIGN(r, g, b) (((rgb[0] = r), (rgb[1] = g), (rgb[2] = b)))
-# define WINDOW_W 2500
-# define WINDOW_H 1540
+# define WINDOW_W 1000
+# define WINDOW_H 1000
 
 typedef	struct		s_coord
 {

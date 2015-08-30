@@ -1,0 +1,6 @@
+[submodule "libft"]
+	path = libft
+	url = https://github.com/avallete/libft_end
+[submodule "testmap"]
+	path = testmap
+	url = https://bitbucket.org/toss-dev/map_fdf.git
